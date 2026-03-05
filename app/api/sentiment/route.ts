@@ -9,8 +9,8 @@ import { GoogleGenerativeAI } from '@google/generative-ai';
 import { Review, SentimentAnalysis } from '@/types';
 
 export async function POST(request: NextRequest) {
-  let reviews: Review[];
-  let movieTitle: string;
+  let reviews: Review[] = [];
+  let movieTitle = '';
   
   try {
     const body = await request.json();

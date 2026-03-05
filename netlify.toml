@@ -7,12 +7,6 @@
 [[plugins]]
   package = "@netlify/plugin-nextjs"
 
-# Redirect all requests to Next.js for client-side routing
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-
 # Environment variables (configure actual values in Netlify Dashboard)
 # OMDB_API_KEY = "your-key-here"
 # OPENAI_API_KEY = "your-key-here"
